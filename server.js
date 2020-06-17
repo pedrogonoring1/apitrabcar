@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 connectDB()
-const Port = process.env.Port || 4200;
+const Port = process.env.Port || 8877;
 
 //Chamando as rotas
 app.use('/user', require('./routers/user'));
