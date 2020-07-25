@@ -17,6 +17,8 @@ app.use('/car', require('./routers/car'));
 app.use('/locacao', require('./routers/locacao'));
 
 
-app.listen(Port, () => console.log('Servidor Iniciado!'));
+//app.listen(Port, () => console.log('Servidor Iniciado!'));
+app.listen(process.env.PORT || 8080);
+
 
 module.exports = app;
